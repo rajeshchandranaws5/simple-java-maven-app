@@ -4,7 +4,7 @@ pipeline {
           maven 'maven-3.9.16'
      }
     parameters {
-          choice choices: ['dev', 'test', 'prod'], name: 'env'
+          choice choices: ['dev', 'prd'], name: 'env'
     }
     stages {
         stage('Build') {
