@@ -1,7 +1,7 @@
 pipeline {
     agent any
     tools {
-          maven 'maven-ci-server'
+          maven 'maven-3.9.16'
      }
     parameters {
           choice choices: ['dev', 'test', 'prod'], name: 'env'
